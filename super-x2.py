@@ -142,13 +142,13 @@ def setting():
 		print("""%s \33[1;33mRoung Input"""%(h))
 		exit()
 	print("""%s \x1b[92;1m=======================================================\x1b[92;1m """%(h))
-	print("""%s \33[1;33m[01] Mobile (best)"""%(h))
+	print("""%s \33[1;33m[01] B-Api (Best)"""%(h))
 	print("""%s \x1b[92;1m=======================================================\x1b[92;1m """%(h))
 	baloch = input(x+'\33[1;96m•Input Number> : ')
 	if baloch in ['1','01']:
-		method.append('mobile')
+		method.append('api')
 	else:
-		method.append('mobile')
+		method.append('api')
 	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
 	fast = input(x+'\33[1;96m Want To Start ? (y/y) : ')
 	if fast in ['y','Y']:

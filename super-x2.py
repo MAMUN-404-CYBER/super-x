@@ -18,9 +18,9 @@ from rich import print as cetak
 from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 try:ugen = open('user.txt','r').read().splitlines()
-except:ugen = ['Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Nokia 7610;451) Opera 6.20'] #Aziz
+except:ugen = ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.94 Chrome/37.0.2062.94 Safari/537.36'] #Aziz
 try:ugen2 = open('user2.txt','r').read().splitlines()
-except:ugen2 = ['Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Nokia 7610;451) Opera 6.20'] #Aziz
+except:ugen2 = ['Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36'] #Aziz
 
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 
@@ -142,13 +142,13 @@ def setting():
 		print("""%s \33[1;33mRoung Input"""%(h))
 		exit()
 	print("""%s \x1b[92;1m=======================================================\x1b[92;1m """%(h))
-	print("""%s \33[1;33m[01] B-Api (Best)"""%(h))
+	print("""%s \33[1;33m[01] Mobile (Best)"""%(h))
 	print("""%s \x1b[92;1m=======================================================\x1b[92;1m """%(h))
 	baloch = input(x+'\33[1;96m•Input Number> : ')
 	if baloch in ['1','01']:
-		method.append('api')
+		method.append('mobile')
 	else:
-		method.append('api')
+		method.append('mobile')
 	print("""%s \x1b[92;1m===================================>\x1b[92;1m """%(h))
 	fast = input(x+'\33[1;96m Want To Start ? (y/y) : ')
 	if fast in ['y','Y']:

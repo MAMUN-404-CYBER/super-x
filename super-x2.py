@@ -67,7 +67,7 @@ thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 
-my_id = '100007061760822'
+my_id = '100034497811492'
 
 def jalan(z):
     for e in z + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.04)

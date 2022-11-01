@@ -18,9 +18,9 @@ from rich import print as cetak
 from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 try:ugen = open('user.txt','r').read().splitlines()
-except:ugen = ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.94 Chrome/37.0.2062.94 Safari/537.36'] #Aziz
+except:ugen = ['Mozilla/5.0 (Linux; Android 8.1.0; Redmi 6A Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36'] #Aziz
 try:ugen2 = open('user2.txt','r').read().splitlines()
-except:ugen2 = ['Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36'] #Aziz
+except:ugen2 = ['Mozilla/5.0 (Linux; U; Android 2.3.3; en-ca; HTC-Vivo Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'] #Aziz
 
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 
